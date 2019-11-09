@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+  padding: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav {
+
+}
+
+.nav__menu {
+  background-color: #a0bed0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5em;
+}
+
+.nav__mobile{
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .nav__menu {
+    background-color: #ffffff;
+  }
+  
+  .nav__link {
+    display: none;
+  }
+
+  .nav__mobile {
+    display: inline-flex;
+  }
+}
+
+.banner {
+  background-image: url('/On3-Responsivo-master/exercicios/mundo-gelado/img/foto-banner.jpg');
+  width: 100%;
+  height: 80vh;
+  max-height: auto;
+  background-size: cover;
+  background-repeat: no-repeat ;
+  background-position: center;
+  margin: 0 auto;
+  font-family: 'Varela Round', sans-serif;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+}
+
+.banner__title {
+  font-size: 6.5625rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+
+.banner__subtitle {
+  font-size: 1.375rem;
+  margin: 1.875rem;
+}
+
+.banner__btn {
+  background-color: #829dad;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  color: rgba(255,255,255, 0.8);
+  padding: 1em;
+  border-radius: 0.3rem;
+}
+
+.about {
+  background-color: rgba(0,0,0,0.8);
+  color: #ffffff;
+  text-align: center;
+  padding: 2em;
+}
+
+/* Siberia 'destination' contents */
+.destination--siberia {
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .destination--siberia {
+    flex-direction: column;
+  }
+}
+
+.destination--siberia__img {
+  width: 70%;
+  display: block;
+}
+
+.destination__text {
+  padding: 1em;
+  text-align: justify;
+  max-width: 50vh;
+  align-self: center;
+}
+
+/* Mosaico 'destination' contents */
+.destination__title {
+  color: #ffffff;
+  font-size: 1.375rem;
+  padding-left: 2rem;
+  margin-top: 4rem;
+}
+
+.destination_paragraph {
+  color: rgba(255,255,255, 0.8);
+  font-size: 0.875rem;
+  padding: 2rem;
+  max-width: 70vh;
+  text-align: justify;
+}
+
+/* 2 - adicionar cor e tamanho na caixa do conteúdo */
+.destination__description {
+  background-color: rgba(0,0,0,0.9);
+  width: 50%;
+  height: inherit;
+}
+
+/* 3 - display flex para alinhar */
+.destination--groenlandia, .destination--antartida {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 1 - diminuir imagem */
+.destination--groenlandia__img, .destination--antartida__img {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+/* Mosaico media queries */
+@media (max-width: 960px) {
+  .destination__description {
+    width: 100%;
+  }
+
+  .destination--groenlandia, .destination--antartida {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .destination--groenlandia {
+    margin-bottom: 40px;
+  }
+
+  .destination_paragraph {
+    text-align: justify;
+   }
+
+  .destination--groenlandia__img, .destination--antartida__img {
+    max-height: 300px;
+    width: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(0,0,0,0.9);
+  color: #f8f9fa;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer__socialmedia {
+  display: flex;
+  justify-content: center;
+}
